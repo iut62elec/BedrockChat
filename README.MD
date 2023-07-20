@@ -51,7 +51,7 @@ You need to have AWS account with access to AWS Bedrock and AWS Kendra. Create a
     source .venv/bin/activate
 
     ```
-6. Navigate into the sample apps and run the application:
+6. Navigate into the source code and run the application:
     ```bash
     cd ./src
     streamlit run app_BedrockChat.py bedrock
@@ -61,4 +61,4 @@ This will open a local server at http://localhost:8501/, where you can start int
 
 ## Disclaimer
 
-This repository represents my viewpoints and not those of my employer, Amazon Web Services (AWS). All product names, logos, and brands are the property of their respective owners. This code has been tested on a Mac device and works well, but use at your own caution. Also note that AWS Kendra and AWS Bedrock are not part of AWS free tier.
+This repository represents my viewpoints and not those of my employer, Amazon Web Services (AWS). All product names, logos, and brands are the property of their respective owners. This code acts as a sample to use AWS Bedrock for Chatbot and has been tested on a Mac device and works well, but use at your own caution. Also note that AWS Kendra and AWS Bedrock are not part of AWS free tier.
