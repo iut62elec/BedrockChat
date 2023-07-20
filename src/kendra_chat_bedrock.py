@@ -28,7 +28,8 @@ MAX_HISTORY_LENGTH = 5
 def build_chain():
   region = os.environ["AWS_REGION"]
   kendra_index_id = os.environ["KENDRA_INDEX_ID_BR"]
-
+  AWS_PROFILE = os.environ["AWS_PROFILE"]
+  
   class ContentHandler(LLMContentHandler):
     content_type = "application/json"
     accepts = "application/json"
@@ -54,7 +55,8 @@ def build_chain():
                                "temperature":1e-10,"top_k":250,
                                "top_p":1}  
 
-  llm_BR = Bedrock(credentials_profile_name="741094476554_BR", model_id="anthropic.claude-v1",model_kwargs=model_kwargs_anthropic)
+  #llm_BR = Bedrock(credentials_profile_name="741094476554_BR", model_id="anthropic.claude-v1",model_kwargs=model_kwargs_anthropic)
+  llm_BR = Bedrock(credentials_profile_name=AWS_PROFILE, model_id="anthropic.claude-v1",model_kwargs=model_kwargs_anthropic)
       
   
   retriever = AmazonKendraRetriever(index_id=kendra_index_id)
