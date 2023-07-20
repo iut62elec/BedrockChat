@@ -15,7 +15,7 @@ This AI-driven application offers:
 To set up the application, follow the steps below:
 
 **Prerequisites**
-You need to have AWS account with access to AWS Bedrock and AWS Kendra. Create an index in AWS Kendra and using one of the provided connectors (for example, Web crawler), ingest documents into the AWS Kendra index.
+You need to have AWS account with access to AWS Bedrock and AWS Kendra. Create an index in AWS Kendra and using one of the provided connectors (for example, Web crawler), ingest documents into the AWS Kendra index.(Please note that AWS Kendra and AWS Bedrock are NOT part of AWS free tier and you will be charged)
 
 1. Clone the repository:
     ```bash
@@ -61,4 +61,4 @@ This will open a local server at http://localhost:8501/, where you can start int
 
 ## Disclaimer
 
-This repository represents my viewpoints and not those of my employer, Amazon Web Services (AWS). All product names, logos, and brands are the property of their respective owners. This code acts as a sample to use AWS Bedrock for Chatbot and has been tested on a Mac device and works well, but use at your own caution. Also note that AWS Kendra and AWS Bedrock are not part of AWS free tier.
+This repository represents my viewpoints and not those of my past or current employers, including Amazon Web Services (AWS). All third-party libraries, modules, plugins, SDKs, product names, logos, and brands are the property of their respective owners. This code acts as a sample to use AWS Bedrock for Chatbot and has been tested on a Mac device and works well, but use at your own caution.
