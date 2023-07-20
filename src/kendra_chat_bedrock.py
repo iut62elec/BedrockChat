@@ -55,7 +55,6 @@ def build_chain():
                                "temperature":1e-10,"top_k":250,
                                "top_p":1}  
 
-  #llm_BR = Bedrock(credentials_profile_name="741094476554_BR", model_id="anthropic.claude-v1",model_kwargs=model_kwargs_anthropic)
   llm_BR = Bedrock(credentials_profile_name=AWS_PROFILE, model_id="anthropic.claude-v1",model_kwargs=model_kwargs_anthropic)
       
   
